@@ -8,7 +8,6 @@ RUN echo "deb http://packages.elasticsearch.org/elasticsearch/1.0/debian stable 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-6-jre elasticsearch
 
-#ADD supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 ADD startup.sh /home/docker/startup.sh
 RUN chmod +x /home/docker/startup.sh
 CMD ["/home/docker/startup.sh"]
