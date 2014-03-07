@@ -1,6 +1,6 @@
 FROM ubuntu_base 
 
-MAINTAINER GlobAllomeTree "globallometree@fao.org"
+MAINTAINER Bit Bamboo, LLC "alext@bitbamboo.com"
 
 # elasticsearch
 RUN curl http://packages.elasticsearch.org/GPG-KEY-elasticsearch | apt-key add -
